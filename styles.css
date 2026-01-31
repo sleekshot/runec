@@ -424,15 +424,17 @@ details p {
   box-shadow: var(--shadow-sm);
   display: flex;
   gap: 16px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .contact-card img {
   width: 24px;
   height: 24px;
+  margin-top: 2px;
 }
 
 .site-footer {
+  background: var(--cream);
   border-top: 1px solid var(--border);
   padding: 40px 0;
 }
