@@ -55,7 +55,13 @@
                 <span>Konkrétní drill plán a fyzioterapie</span>
               </div>
             </div>
-            <a class="button primary" href="#cena">Rezervovat</a>
+            <a
+              class="button primary"
+              href="#cena"
+              onclick="gtag('event', 'rezervace_scroll');"
+            >
+              Rezervovat
+            </a>
           </div>
           <div class="hero-image">
             <img src="./assets/hero-running.png" alt="Běžecká technika" />
@@ -216,6 +222,7 @@
                   href="https://fyziotrend.cz"
                   target="_blank"
                   rel="noopener"
+                  onclick="gtag('event', 'rezervace_click');"
                 >
                   Rezervovat termín
                 </a>
@@ -249,6 +256,7 @@
                   href="https://fyziotrend.cz"
                   target="_blank"
                   rel="noopener"
+                  onclick="gtag('event', 'rezervace_click');"
                 >
                   Rezervovat termín
                 </a>
@@ -281,7 +289,7 @@
             <details>
               <summary>Kde diagnostika probíhá?</summary>
               <p>
-                Podle domluvy venku v přilehlém parku, případně na běžeckém pásu. Je nutnuté dát vědět, kde budeme diagnostiku provádět.
+                Podle domluvy venku v přilehlém parku, případně na běžeckém pásu. Je nuté dát vědět, kde budeme diagnostiku provádět.
               </p>
             </details>
             <details>
