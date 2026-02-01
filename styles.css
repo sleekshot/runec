@@ -335,8 +335,14 @@ p {
   border-radius: 16px;
   padding: 28px;
   box-shadow: var(--shadow-lg);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+}
+
+.price-grid {
+  display: grid;
+  gap: 24px;
 }
 
 .price-card ul {
@@ -345,6 +351,20 @@ p {
   margin: 0;
   display: grid;
   gap: 12px;
+}
+
+.price-cta {
+  margin-top: auto;
+  display: grid;
+  gap: 12px;
+}
+
+.gift-placeholder {
+  visibility: hidden;
+}
+
+.price-cta .button.primary {
+  width: 100%;
 }
 
 .price-card li {
@@ -362,6 +382,10 @@ p {
   font-size: 2rem;
   font-weight: 700;
   color: var(--dark);
+}
+
+.price-prefix {
+  font-weight: 400;
 }
 
 .gift-link {
@@ -513,6 +537,10 @@ details p {
   .footer-bottom {
     grid-template-columns: 1fr auto;
     align-items: center;
+  }
+
+  .price-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
